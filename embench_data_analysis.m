@@ -52,18 +52,9 @@ for aftx07_arch = ["rv32im" "rv32imc"]
         hold off;
 
         % Create bar graph for ipc
-        figure;
-        hold on;
-        bar([aftx06.(aftx06_arch).ipc aftx07.(aftx07_arch).ipc]);
-        title(strcat("IPC Comparison", title_end));
-        legend([aftx06_str; aftx07_str]);
-        xlabel("Benchmark");
-        ylabel("IPC")
-        grid on;
-        axis([-inf inf 0 .5])
-        xticks(1:numel(benchmarks));
-        xticklabels(benchmarks);
-        hold off;
+        create_ipc_graph(aftx06.(aftx06_arch).ipc, ...
+            aftx07.(aftx07_arch).ipc, title_end, aftx06_str, ...
+            aftx07_str, benchmarks)
     end
 end
 
@@ -112,15 +103,11 @@ xticklabels(benchmarks);
 hold off;
 
 % Create bar graph for ipc
-figure;
-hold on;
-bar([aftx07.rv32imc.ipc aftx07.rv32emc.ipc]);
-title(strcat("IPC Comparison", title_end));
-legend([aftx06_str; aftx07_str]);
-xlabel("Benchmark");
-ylabel("IPC")
-grid on;
-axis([-inf inf 0 .75])
-xticks(1:numel(benchmarks));
-xticklabels(benchmarks);
-hold off;
+create_ipc_graph(aftx07.rv32imc.ipc, aftx07.rv32emc.ipc, ...
+    title_end, aftx06_str, aftx07_str, benchmarks);
+
+aftx06_str = "AFTx07 (no $)";
+aftx07_str = "AFTx07 (with $)";
+title_end = sprintf(" of %s and %s   ", aftx06_str, aftx07_str);
+create_ipc_graph(aftx07.rv32imc.ipc, aftx07.rv32imc.cache.ipc, ...
+    title_end, aftx06_str, aftx07_str, benchmarks);
