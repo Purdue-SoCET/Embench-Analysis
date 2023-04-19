@@ -8,7 +8,7 @@ legend([base_str; new_str]);
 xlabel("Benchmark");
 ylabel("IPC")
 grid on;
-axis([-inf inf 0 .5])
+axis([-inf inf 0 .75])
 xticks(1:numel(benchmarks));
 xticklabels(benchmarks);
 hold off;
