@@ -348,7 +348,7 @@ aftx07_cache.s1024b2a1.cycles = [
     14534058
     5358885
 ];
-aftx07_cache.s1024b2a1.rv32imc.instrs = [
+aftx07_cache.s1024b2a1.instrs = [
     4562927
     4183949
     7644819
@@ -369,7 +369,7 @@ aftx07_cache.s1024b2a1.rv32imc.instrs = [
     3620909
     1216533
 ];
-aftx07_cache.s1024b2a1.rv32imc.speed = [
+aftx07_cache.s1024b2a1.speed = [
     0.57
     0.21
     0.11
@@ -390,7 +390,7 @@ aftx07_cache.s1024b2a1.rv32imc.speed = [
     0.28
     0.52
 ];
-aftx07_cache.s1024b2a1.rv32imc.ipc = aftx07_cache.s1024b2a1.rv32imc.instrs ./ aftx07_cache.s1024b2a1.rv32imc.cycles;
+aftx07_cache.s1024b2a1.ipc = aftx07_cache.s1024b2a1.instrs ./ aftx07_cache.s1024b2a1.cycles;
 % AFTx07 w/ cache stats (1024 2 2)
 aftx07_cache.s1024b2a2.cycles = [
     7179001
@@ -413,7 +413,7 @@ aftx07_cache.s1024b2a2.cycles = [
     14011010
     5220006
 ];
-aftx07_cache.s1024b2a2.rv32imc.instrs = [
+aftx07_cache.s1024b2a2.instrs = [
     4562927
     4183949
     7645360
@@ -434,7 +434,7 @@ aftx07_cache.s1024b2a2.rv32imc.instrs = [
     3626821
     1216477
 ];
-aftx07_cache.s1024b2a2.rv32imc.speed = [
+aftx07_cache.s1024b2a2.speed = [
     0.56
     0.55
     0.11
@@ -455,7 +455,7 @@ aftx07_cache.s1024b2a2.rv32imc.speed = [
     0.29
     0.53
 ];
-aftx07_cache.s1024b2a2.rv32imc.ipc = aftx07_cache.s1024b2a2.rv32imc.instrs ./ aftx07_cache.s1024b2a2.rv32imc.cycles;
+aftx07_cache.s1024b2a2.ipc = aftx07_cache.s1024b2a2.instrs ./ aftx07_cache.s1024b2a2.cycles;
 % AFTx07 w/ cache stats (1024 4 1)
 aftx07_cache.s1024b4a1.cycles = [
     7474002
@@ -478,7 +478,7 @@ aftx07_cache.s1024b4a1.cycles = [
     16288990
     6256433
 ];
-aftx07_cache.s1024b4a1.rv32imc.instrs = [
+aftx07_cache.s1024b4a1.instrs = [
     4556160
     4183949
     7583398
@@ -499,7 +499,7 @@ aftx07_cache.s1024b4a1.rv32imc.instrs = [
     3620909
     1208234
 ];
-aftx07_cache.s1024b4a1.rv32imc.speed = [
+aftx07_cache.s1024b4a1.speed = [
     0.54
     0.18
     0.10
@@ -520,7 +520,7 @@ aftx07_cache.s1024b4a1.rv32imc.speed = [
     0.25
     0.44
 ];
-aftx07_cache.s1024b4a1.rv32imc.ipc = aftx07_cache.s1024b4a1.rv32imc.instrs ./ aftx07_cache.s1024b4a1.rv32imc.cycles;
+aftx07_cache.s1024b4a1.ipc = aftx07_cache.s1024b4a1.instrs ./ aftx07_cache.s1024b4a1.cycles;
 % AFTx07 w/ cache stats (1024 4 2)
 aftx07_cache.s1024b4a2.cycles = [
     7790286
@@ -543,7 +543,7 @@ aftx07_cache.s1024b4a2.cycles = [
     15181908
     6073983
 ];
-aftx07_cache.s1024b4a2.rv32imc.instrs = [
+aftx07_cache.s1024b4a2.instrs = [
     4557004
     4183949
     7583389
@@ -564,7 +564,7 @@ aftx07_cache.s1024b4a2.rv32imc.instrs = [
     3620909
     1208205
 ];
-aftx07_cache.s1024b4a2.rv32imc.speed = [
+aftx07_cache.s1024b4a2.speed = [
     0.51
     0.48
     0.10
@@ -585,7 +585,7 @@ aftx07_cache.s1024b4a2.rv32imc.speed = [
     0.26
     0.46
 ];
-aftx07_cache.s1024b4a2.rv32imc.ipc = aftx07_cache.s1024b4a2.rv32imc.instrs ./ aftx07_cache.s1024b4a2.rv32imc.cycles;
+aftx07_cache.s1024b4a2.ipc = aftx07_cache.s1024b4a2.instrs ./ aftx07_cache.s1024b4a2.cycles;
 % AFTx07 w/ cache stats (2048 2 1)
 aftx07_cache.s2048b2a1.cycles = [
     6243244
@@ -608,7 +608,7 @@ aftx07_cache.s2048b2a1.cycles = [
     13303940
     5114307
 ];
-aftx07_cache.s2048b2a1.rv32imc.instrs = [
+aftx07_cache.s2048b2a1.instrs = [
     4559543
     4183949
     7640029
@@ -629,7 +629,7 @@ aftx07_cache.s2048b2a1.rv32imc.instrs = [
     3620909
     1216185
 ];
-aftx07_cache.s2048b2a1.rv32imc.speed = [
+aftx07_cache.s2048b2a1.speed = [
     0.64
     0.21
     0.11
@@ -650,7 +650,7 @@ aftx07_cache.s2048b2a1.rv32imc.speed = [
     0.30
     0.54
 ];
-aftx07_cache.s2048b2a1.rv32imc.ipc = aftx07_cache.s2048b2a1.rv32imc.instrs ./ aftx07_cache.s2048b2a1.rv32imc.cycles;
+aftx07_cache.s2048b2a1.ipc = aftx07_cache.s2048b2a1.instrs ./ aftx07_cache.s2048b2a1.cycles;
 % AFTx07 w/ cache stats (2048 2 2)
 aftx07_cache.s2048b2a2.cycles = [
     6303945
@@ -673,7 +673,7 @@ aftx07_cache.s2048b2a2.cycles = [
     12640407
     5032816
 ];
-aftx07_cache.s2048b2a2.rv32imc.instrs = [
+aftx07_cache.s2048b2a2.instrs = [
     4559543
     4183949
     7644519
@@ -694,7 +694,7 @@ aftx07_cache.s2048b2a2.rv32imc.instrs = [
     3620908
     1216223
 ];
-aftx07_cache.s2048b2a2.rv32imc.speed = [
+aftx07_cache.s2048b2a2.speed = [
     0.64
     0.56
     0.11
@@ -715,7 +715,7 @@ aftx07_cache.s2048b2a2.rv32imc.speed = [
     0.32
     0.55
 ];
-aftx07_cache.s2048b2a2.rv32imc.ipc = aftx07_cache.s2048b2a2.rv32imc.instrs ./ aftx07_cache.s2048b2a2.rv32imc.cycles;
+aftx07_cache.s2048b2a2.ipc = aftx07_cache.s2048b2a2.instrs ./ aftx07_cache.s2048b2a2.cycles;
 % AFTx07 w/ cache stats (2048 4 1)
 aftx07_cache.s2048b4a1.cycles = [
     6302454
@@ -738,7 +738,7 @@ aftx07_cache.s2048b4a1.cycles = [
     14762939
     5435944
 ];
-aftx07_cache.s2048b4a1.rv32imc.instrs = [
+aftx07_cache.s2048b4a1.instrs = [
     4554470
     4183949
     7580338
@@ -759,7 +759,7 @@ aftx07_cache.s2048b4a1.rv32imc.instrs = [
     3620909
     1208005
 ];
-aftx07_cache.s2048b4a1.rv32imc.speed = [
+aftx07_cache.s2048b4a1.speed = [
     0.64
     0.18
     0.11
@@ -780,7 +780,7 @@ aftx07_cache.s2048b4a1.rv32imc.speed = [
     0.27
     0.51
 ];
-aftx07_cache.s2048b4a1.rv32imc.ipc = aftx07_cache.s2048b4a1.rv32imc.instrs ./ aftx07_cache.s2048b4a1.rv32imc.cycles;
+aftx07_cache.s2048b4a1.ipc = aftx07_cache.s2048b4a1.instrs ./ aftx07_cache.s2048b4a1.cycles;
 % AFTx07 w/ cache stats (2048 4 2)
 aftx07_cache.s2048b4a2.cycles = [
     6344121
@@ -803,7 +803,7 @@ aftx07_cache.s2048b4a2.cycles = [
     13781490
     5217298
 ];
-aftx07_cache.s2048b4a2.rv32imc.instrs = [
+aftx07_cache.s2048b4a2.instrs = [
     4554470
     4183949
     7583398
@@ -824,7 +824,7 @@ aftx07_cache.s2048b4a2.rv32imc.instrs = [
     3620908
     1208045
 ];
-aftx07_cache.s2048b4a2.rv32imc.speed = [
+aftx07_cache.s2048b4a2.speed = [
     0.63
     0.50
     0.11
@@ -845,7 +845,7 @@ aftx07_cache.s2048b4a2.rv32imc.speed = [
     0.29
     0.53
 ];
-aftx07_cache.s2048b4a2.rv32imc.ipc = aftx07_cache.s2048b4a2.rv32imc.instrs ./ aftx07_cache.s2048b4a2.rv32imc.cycles;
+aftx07_cache.s2048b4a2.ipc = aftx07_cache.s2048b4a2.instrs ./ aftx07_cache.s2048b4a2.cycles;
 % AFTx07 w/ cache stats (4096 2 1)
 aftx07_cache.s4096b2a1.cycles = [
     5990634
@@ -868,7 +868,7 @@ aftx07_cache.s4096b2a1.cycles = [
     11004021
     4997089
 ];
-aftx07_cache.s4096b2a1.rv32imc.instrs = [
+aftx07_cache.s4096b2a1.instrs = [
     4556158
     4183949
     7623729
@@ -889,7 +889,7 @@ aftx07_cache.s4096b2a1.rv32imc.instrs = [
     3620908
     1216165
 ];
-aftx07_cache.s4096b2a1.rv32imc.speed = [
+aftx07_cache.s4096b2a1.speed = [
     0.67
     0.58
     0.12
@@ -910,7 +910,7 @@ aftx07_cache.s4096b2a1.rv32imc.speed = [
     0.36
     0.56
 ];
-aftx07_cache.s4096b2a1.rv32imc.ipc = aftx07_cache.s4096b2a1.rv32imc.instrs ./ aftx07_cache.s4096b2a1.rv32imc.cycles;
+aftx07_cache.s4096b2a1.ipc = aftx07_cache.s4096b2a1.instrs ./ aftx07_cache.s4096b2a1.cycles;
 % AFTx07 w/ cache stats (4096 2 2)
 aftx07_cache.s4096b2a2.cycles = [
     5963136
@@ -933,7 +933,7 @@ aftx07_cache.s4096b2a2.cycles = [
     11139937
     4950718
 ];
-aftx07_cache.s4096b2a2.rv32imc.instrs = [
+aftx07_cache.s4096b2a2.instrs = [
     4554468
     4183949
     7624800
@@ -954,7 +954,7 @@ aftx07_cache.s4096b2a2.rv32imc.instrs = [
     3620908
     1215999
 ];
-aftx07_cache.s4096b2a2.rv32imc.speed = [
+aftx07_cache.s4096b2a2.speed = [
     0.67
     0.58
     0.12
@@ -975,7 +975,7 @@ aftx07_cache.s4096b2a2.rv32imc.speed = [
     0.36
     0.56
 ];
-aftx07_cache.s4096b2a2.rv32imc.ipc = aftx07_cache.s4096b2a2.rv32imc.instrs ./ aftx07_cache.s4096b2a2.rv32imc.cycles;
+aftx07_cache.s4096b2a2.ipc = aftx07_cache.s4096b2a2.instrs ./ aftx07_cache.s4096b2a2.cycles;
 % AFTx07 w/ cache stats (4096 4 1)
 aftx07_cache.s4096b4a1.cycles = [
     5996699
@@ -998,7 +998,7 @@ aftx07_cache.s4096b4a1.cycles = [
     12492418
     5221759
 ];
-aftx07_cache.s4096b4a1.rv32imc.instrs = [
+aftx07_cache.s4096b4a1.instrs = [
     4553621
     4183949
     7572328
@@ -1019,7 +1019,7 @@ aftx07_cache.s4096b4a1.rv32imc.instrs = [
     3620908
     1207968
 ];
-aftx07_cache.s4096b4a1.rv32imc.speed = [
+aftx07_cache.s4096b4a1.speed = [
     0.67
     0.52
     0.12
@@ -1040,7 +1040,7 @@ aftx07_cache.s4096b4a1.rv32imc.speed = [
     0.32
     0.53
 ];
-aftx07_cache.s4096b4a1.rv32imc.ipc = aftx07_cache.s4096b4a1.rv32imc.instrs ./ aftx07_cache.s4096b4a1.rv32imc.cycles;
+aftx07_cache.s4096b4a1.ipc = aftx07_cache.s4096b4a1.instrs ./ aftx07_cache.s4096b4a1.cycles;
 % AFTx07 w/ cache stats (4096 4 2)
 aftx07_cache.s4096b4a2.cycles = [
     5961953
@@ -1063,7 +1063,7 @@ aftx07_cache.s4096b4a2.cycles = [
     12424350
     5073463
 ];
-aftx07_cache.s4096b4a2.rv32imc.instrs = [
+aftx07_cache.s4096b4a2.instrs = [
     4553621
     4183949
     7573699
@@ -1084,7 +1084,7 @@ aftx07_cache.s4096b4a2.rv32imc.instrs = [
     3620908
     1207823
 ];
-aftx07_cache.s4096b4a2.rv32imc.speed = [
+aftx07_cache.s4096b4a2.speed = [
     0.67
     0.54
     0.11
@@ -1105,7 +1105,7 @@ aftx07_cache.s4096b4a2.rv32imc.speed = [
     0.32
     0.55
 ];
-aftx07_cache.s4096b4a2.rv32imc.ipc = aftx07_cache.s4096b4a2.rv32imc.instrs ./ aftx07_cache.s4096b4a2.rv32imc.cycles;
+aftx07_cache.s4096b4a2.ipc = aftx07_cache.s4096b4a2.instrs ./ aftx07_cache.s4096b4a2.cycles;
 
 benchmarks = {
     "aha-mont64";
@@ -1133,5 +1133,6 @@ benchmarks = {
 assignin('base', 'aftx06', aftx06);
 assignin('base', 'aftx07', aftx07);
 assignin('base', 'benchmarks', benchmarks);
+assignin('base', 'aftx07_cache', aftx07_cache);
 
 end

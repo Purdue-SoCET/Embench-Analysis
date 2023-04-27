@@ -1,14 +1,24 @@
-function create_ipc_graph(base, new, title_end, base_str, new_str, benchmarks)
+function create_ipc_graph(data, title_end, names, benchmarks, xlim, x_label, y_label)
+
+if ~exist('xlim', 'var')
+  xlim = .75;
+end
+if ~exist('x_label', 'var')
+  x_label = "Benchmark";
+end
+if ~exist('y_label', 'var')
+  y_label = "IPC";
+end
 
 figure;
 hold on;
-bar([base new]);
+bar(data);
 title(strcat("IPC Comparison", title_end));
-legend([base_str; new_str]);
-xlabel("Benchmark");
-ylabel("IPC")
+legend(names);
+xlabel(x_label);
+ylabel(y_label)
 grid on;
-axis([-inf inf 0 .75])
+axis([-inf inf 0 xlim])
 xticks(1:numel(benchmarks));
 xticklabels(benchmarks);
 hold off;
