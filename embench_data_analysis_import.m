@@ -29,5 +29,6 @@ import_aftx07_cache();
 import_aftx08_512b();
 import_aftx08_1kb();
 import_aftx08_2kb();
+import_aftx08();
 
 end
